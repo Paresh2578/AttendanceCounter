@@ -175,12 +175,12 @@ function saveData() {
     let currentDate = new Date();
 
 
-    if ((currentDate.getMonth() + 1) < 9) {
+    if ((currentDate.getMonth() + 1) <= 9) {
         currenMouth = "0" + (currentDate.getMonth() + 1);
     }else{
         currenMouth = currentDate.getMonth();
     }
-    if ((currentDate.getDate()) < 9) {
+    if ((currentDate.getDate()) <= 9) {
         currenDay = "0" + (currentDate.getDate());
     }else{
         currenDay = currentDate.getDate();
